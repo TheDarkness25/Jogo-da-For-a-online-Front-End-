@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" type="text/css" href="../static/css/partida.css" th:href="@{/css/partida.css}">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+  <img th:src="@{/assets/images/partida_tela.png}" src="../static/assets/images/partida_tela.png" class="tela">
+
+  
+
+  <input type="button" value="00 : 00" id="tempo">
+
+  <form>
+
+     <input type="button" id="tema">
+     <input type="button" id="vez">
+     <input type="button" id="pj">
+     <input type="button" id="sj">
+  
+  </form>
+  
+  <img th:src="@{/assets/images/partida_astronauta.png}" src="../static/assets/images/partida_astronauta.png" class="astronauta">
+  <img th:src="@{/assets/images/partida_dica.png}" src="../static/assets/images/partida_dica.png" class="dica">
+
+
+ <button class="cores">
+  <div id="pjcor1" class="volume"></div>
+  <div id="pjcor2" class="volume"></div>
+  <div id="pjcor3" class="volume"></div>
+  <div id="pjcor4" class="volume"></div>
+  <div id="pjcor5" class="volume"></div>
+  <div id="pjcor6" class="volume"></div>
+  <div id="pjcor7" class="volume"></div>
+  <div id="pjcor8" class="volume"></div>
+</button>
+
+
+  <img th:src="@{/assets/images/partida_cilindro.png}" src="../static/assets/images/partida_cilindro.png" class="cilindro">
+  <img th:src="@{/assets/images/partida_ponteiro.png}" src="../static/assets/images/partida_ponteiro.png" id="movepj">
+
+ <button class="cores-2">
+  <div id="sjcor1" class="volume"></div>
+  <div id="sjcor2" class="volume"></div>
+  <div id="sjcor3" class="volume"></div>
+  <div id="sjcor4" class="volume"></div>
+  <div id="sjcor5" class="volume"></div>
+  <div id="sjcor6" class="volume"></div>
+  <div id="sjcor7" class="volume"></div>
+  <div id="sjcor8" class="volume"></div>
+</button>
+  
+  <img th:src="@{/assets/images/partida_cilindro.png}" src="../static/assets/images/partida_cilindro.png" class="cilindro-2">
+  <img th:src="@{/assets/images/partida_ponteiro.png}" src="../static/assets/images/partida_ponteiro.png" id="movesj">
+
+ <div class="grade-container">
+
+  <div><input type="button" class="tamanho" value="A" id="A" onClick="validar('A')"></div>
+  <div><input type="button" class="tamanho" value="B" id="B" onClick="validar('B')"></div>
+  <div><input type="button" class="tamanho" value="C" id="C" onClick="validar('C')"></div>  
+  <div><input type="button" class="tamanho" value="D" id="D" onClick="validar('D')"></div>
+  <div><input type="button" class="tamanho" value="E" id="E" onClick="validar('E')"></div>
+  <div><input type="button" class="tamanho" value="F" id="F" onClick="validar('F')"></div>
+  <div><input type="button" class="tamanho" value="G" id="G" onClick="validar('G')"></div>
+  <div><input type="button" class="tamanho" value="H" id="H" onClick="validar('H')"></div>
+  <div><input type="button" class="tamanho" value="I" id="I" onClick="validar('I')"></div>
+  <div><input type="button" class="tamanho" value="J" id="J" onClick="validar('J')"></div>
+
+ </div>
+
+ <div class="grade-container-2">
+  <div><input type="button" class="tamanho" value="K" id="K" onClick="validar('K')"></div>
+  <div><input type="button" class="tamanho" value="L" id="L" onClick="validar('L')"></div>
+  <div><input type="button" class="tamanho" value="M" id="M" onClick="validar('M')"></div>
+  <div><input type="button" class="tamanho" value="N" id="N" onClick="validar('N')"></div>
+  <div><input type="button" class="tamanho" value="O" id="O" onClick="validar('O')"></div>
+  <div><input type="button" class="tamanho" value="P" id="P" onClick="validar('P')"></div>
+  <div><input type="button" class="tamanho" value="Q" id="Q" onClick="validar('Q')"></div>
+  <div><input type="button" class="tamanho" value="R" id="R" onClick="validar('R')"></div>
+  <div><input type="button" class="tamanho" value="S" id="S" onClick="validar('S')"></div>
+
+ </div>
+
+ <div class="grade-container-3">
+
+  <div><input type="button" class="tamanho" value="T" id="T" onClick="validar('T')"></div>
+  <div><input type="button" class="tamanho" value="U" id="U" onClick="validar('U')"></div>
+  <div><input type="button" class="tamanho" value="V" id="V" onClick="validar('V')"></div>
+  <div><input type="button" class="tamanho" value="W" id="W" onClick="validar('W')"></div>
+  <div><input type="button" class="tamanho" value="X" id="X" onClick="validar('X')"></div>
+  <div><input type="button" class="tamanho" value="Y" id="Y" onClick="validar('Y')"></div>
+  <div><input type="button" class="tamanho" value="Z" id="Z" onClick="validar('Z')"></div>
+ 
+ </div>
+
+<button class="campo" id="letra"></button>
+
+<button class="responder">responder</button>
+
+</div>
+
+<script type="text/javascript" th:src="@{/js/partida.js}" src="../static/js/partida.js"></script>
+<script type="text/javascript" th:src="@{/js/partida_validar.js}" src="../static/js/partida_validar.js"></script>
+<script type="text/javascript" th:src="@{/js/partida_verificar.js}" src="../static/js/partida_verificar.js"></script>
+<script type="text/javascript" th:src="@{/js/partida_teclado.js}" src="../static/js/partida_teclado.js"></script>
+<script type="text/javascript" th:src="@{/js/partida_cronometro.js}" src="../static/js/partida_cronometro.js"></script>
+
+
+
+
+</body>
+</html>

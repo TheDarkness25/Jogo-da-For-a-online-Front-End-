@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/redefinir.css"  th:href="@{/css/redefinir.css}" />
+    <link rel="icon" type="image/png" href="../static/assets/images/icone_astronaut.png" th:href="@{/assets/images/icone_astronaut.png}"/>
+    <div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+    <nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+    <div th:if="${erro}">
+        <span style="color: yellow;">Senhas não batem.</span> 
+    </div>
+    <div class="box">
+        <img src="../static/assets/images/seta_login.png" th:src="@{/assets/images/seta_login.png}" class="voltar" onclick="history.back();">
+        <span>REDEFINIR SENHA</span>
+        <form id="redefinirForm" th:action="@{/redefinir}" th:object="${cadastroForm}" method="post">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="senha">NOVA SENHA</label>
+                    <input id="senha" type="password" placeholder="senha" th:field="*{senha}">
+                </div>
+                <div class="grid-item">
+                    <label for="password">CONFIRMAR SENHA</label>
+                    <input id="confirma" type="password" placeholder="confirmar senha" th:field="*{senhaConfirma}">
+                </div>
+            </div>
+            <!-- <input id="usuario" type="text" placeholder="Usuário" th:field="*{username}" value="${username}"> -->
+            <input type="submit" id="confirmar" value="CONFIRMAR">
+        </form>
+    </div>  
+</body>
+</html>

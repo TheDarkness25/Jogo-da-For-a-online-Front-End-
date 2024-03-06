@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/lobby.css}" href="../static/css/lobby.css"/>
+    <link rel="icon" type="image/png" th:href="@{/assets/images/icone_astronaut.png}" href="../static/assets/images/icone_astronaut.png"/>
+    <div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <div th:replace="fragments/multiplayer_fragment :: multiplayer-session-lobby"></div>
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+    <nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+    <img class="lobby" th:src="@{/assets/images/astronautas_5.png}" src="../static/assets/images/astronautas_5.png" alt="astronautas_5.png">
+    <div class="carregando">
+        <p>Aguardando outro jogador</p>
+    </div>
+    <div id="box" class="box">
+        <div class="section">
+            <p class="label">Dificuldade</p>
+            <p class="value dificuldade">####</p>
+        </div>
+        <div class="section">
+            <p class="label">Tema</p>
+            <p class="value tema">####</p>
+        </div>
+    </div>
+    <footer>
+        <p class="cancelar">
+            CANCELAR
+        </p>
+        <p class="pronto">
+            PRONTO
+        </p>
+    </footer>
+</body>
+</html>

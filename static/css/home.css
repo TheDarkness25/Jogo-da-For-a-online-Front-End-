@@ -1,0 +1,154 @@
+@font-face{
+  font-family: Bungee;
+  src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  position: absolute;
+  left: 3vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 95vw;
+  height: 95vh;
+  background: url('../assets/images/menu_principal_logado.png') no-repeat center fixed black;
+  background-size: contain;
+}
+
+.menu {
+  position: relative;
+  top: 65vh;
+  width: 5vw;
+  height: 5vw;
+  padding: 0 2.5vw 0 2.5vw;
+}
+
+.logoutBox {
+  left: 85vw;
+  position: relative;
+  top: 60vh;
+  width: 4vw;
+  height: 4vw;
+}
+
+.jogarBtn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 50vh;
+  width: 20vw;
+  height: 10vh;
+}
+
+.jogar {
+  margin: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50px;
+  background-color: #5E17EB;
+  font-family: Bungee;
+  color: #FFC23A;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 7vh;
+  box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+}
+
+.jogar:hover {
+  background-color: white;
+  color: #371A47;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.logout {
+  width: inherit;
+  height: inherit;
+}
+
+.loja {
+  width: inherit;
+  height: inherit;
+}
+
+.perfil {
+  width: inherit;
+  height: inherit;
+}
+
+.outer-box {
+  position: relative;
+  background-color: #8C52FF;
+  border-radius: 5vh;
+  width: 60vh;
+  height: 40vh;
+  left: 65vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inner-box {
+  position: relative;
+  background-color: #fefeff;
+  border-radius: 5vh;
+  width: 45vh;
+  height: 30vh;
+  display: inline-block;
+  top: 5vh;
+  right: 1vw;
+}
+
+.confirma {
+  position: relative;
+  font-family: Bungee;
+  color: #8C52FF;
+  font-size: x-large;
+  top: 10vh;
+}
+
+.btn-x {
+  display: inline-block;
+  position: relative;
+  width: 5vh;
+  height: 5vh;
+  top: 1vh;
+  right: 3.0vh;
+}
+
+.btn-sair {
+  position: relative;
+  top: 16vh;
+  padding: 2vh 4vw;
+  border-radius: 5vh;
+  background-color: red;
+  font-family: Bungee;
+  color: white;
+  font-size: xx-large;
+  box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+}
+
+#overlay {
+  display: none;
+}
+
+.saudacoes {
+  justify-content: none;
+  width: 20vw;
+  background: none;
+  border-radius: 0;
+  display: inline;
+}
+
+.saudacoes span {
+  font-family: Bungee;
+  color: #ffffff;
+  font-size: 3vh;
+}

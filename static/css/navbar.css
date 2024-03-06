@@ -1,0 +1,35 @@
+nav {
+    position: relative;
+    overflow: hidden; 
+    top: 2vh;
+}
+
+nav div {
+    background-color: #5E17EB;
+    border-radius: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6vh;
+}
+
+.vidas-div {
+    float: left;
+    width: 7vw;
+}
+
+.moedas-div {
+    float: right;
+    width: 10vw;
+}
+
+nav img {
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+.vidas-div span, .moedas-div span  {
+  font-family: Bungee;
+  color: #ffffff;
+  font-size: 3vh;
+}

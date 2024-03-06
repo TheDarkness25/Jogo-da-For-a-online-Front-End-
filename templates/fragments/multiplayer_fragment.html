@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div th:fragment="multiplayer-session-lobby" th:remove="tag">
+        <!--    libs for stomp and sockjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+        <!--    end libs for stomp and sockjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../../static/js/socket_js.js" th:src="@{/js/socket_js.js}"></script>
+        <script type="module" src="../../static/js/lobby.js" th:src="@{/js/lobby.js}"></script>
+    </div>
+
+    <div th:fragment="multiplayer-match" th:remove="tag">
+        <!--    libs for stomp and sockjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+        <!--    end libs for stomp and sockjs-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../../static/js/partida_socket.js" th:src="@{/js/partida_socket.js}"></script>
+        <script type="module" th:inline="javascript" src="../../static/js/partida.js" th:src="@{/js/partida.js}"></script>
+    </div>
+</body>
+</html>

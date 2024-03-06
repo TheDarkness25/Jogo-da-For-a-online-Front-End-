@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+}
+
+body {
+    background-color: black;
+}
+
+.fundo {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+#x {
+    position: absolute;
+    z-index: 1;
+    top: 30.5%;
+    left: 22.5%;
+    right: 35%;
+    width: 300px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#x:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#sair {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 37%;
+    right: 35%;
+    width: 350px;
+    height: 60px;
+    padding: 0;
+    font-family: Bungee;
+    color: #5E17EB;
+    font-size: 25px;
+    text-align: center;
+}
+
+#sair2 {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 37%;
+    right: 35%;
+    width: 350px;
+    height: 60px;
+    padding: 0;
+    font-family: Bungee;
+    color: #5E17EB;
+    font-size: 25px;
+    text-align: center;
+}
+
+#sair3 {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 37%;
+    right: 35%;
+    width: 350px;
+    height: 60px;
+    padding: 0;
+    font-family: Bungee;
+    color: #5E17EB;
+    font-size: 25px;
+    text-align: center;
+}
+
+#btnsair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 56%;
+    left: 44.5%;
+    right: 35%;
+    width: 200px;
+    height: 55px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #FD0001;
+    font-family: Bungee;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+}
+
+#btnsair:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#vida {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #moeda{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 93%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #imgMoeda, #imgCor, #lblVida, #lblMoeda{
+    margin-left: 5px;
+  }

@@ -1,0 +1,94 @@
+@font-face{
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+}
+  
+* {
+margin: 0;
+padding: 0;
+} 
+
+body {
+  position: absolute;
+  left: 3vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 95vw;
+  height: 95vh;
+  background: url('../assets/images/fundo_copy.png') no-repeat center fixed black;
+  background-size: contain;
+}
+
+.box {
+    position: relative;
+    background-color: #ececf0;
+    width: 50vw;
+    height: 52vh;
+    top: 20vh;
+    left: 20vw;
+    border-radius: 5vh;
+}
+
+.voltar {
+    position: relative;
+    top: 1vh;
+    right: 8vw;
+    width: 3vw;
+    cursor: pointer;
+}
+
+.box span {
+    position: relative;
+    top: 1vh;
+    right: 1vw;
+    font-family: Bungee;
+    color: #FFC23A;
+    font-size: 8vh;
+    text-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(3vh, auto);
+    row-gap: 3vh;
+    width: 40vw;
+    left: 5vw;
+    top: 5vh;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: Bungee;
+    font-size: 3vh;
+    border-bottom: 1px solid #808080;
+}
+
+.grid-item label{
+    color: #808080;
+}
+
+.redefinirBtn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    top: 13vh;
+    left: 10vw;
+    width: 20vw;
+    height: 6vh;
+    background-color: #5E17EB;
+    border-radius: 5vh;
+  }
+  
+.redefinir {
+    width: inherit;
+    height: inherit;
+    font-family: Bungee;
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 6vh;
+}

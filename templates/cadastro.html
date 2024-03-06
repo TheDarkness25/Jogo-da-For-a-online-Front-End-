@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../static/css/cadastro.css" th:href="@{/css/cadastro.css}"/>
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <div th:if="${erro}">
+    <span style="color: yellow;">Senhas não batem.</span> 
+  </div>
+  <div class="fundo">
+    <div class="img">
+        <img src="../static/assets/images/tela_de_cadastro.png" th:src="@{/assets/images/tela_de_cadastro.png}" width="100%" height="100%">
+        <div >
+          <div id="seta">
+            <img src="../static/assets/images/seta_voltar.png" th:src="@{/assets/images/seta_voltar.png}" width="70px" height="80px" onclick="history.back();">
+          </div>
+          <div id="campos">
+            <form th:action="@{/cadastro}" th:object="${cadastroForm}" method="post">
+              <div><input id="usuario" type="text" placeholder="Usuário" th:field="*{username}"></div>
+              <div><input id="email" type="email" placeholder="E-MAIL" th:field="*{email}"></div>
+              <div><input id="senha" type="password" placeholder="senha" th:field="*{senha}"></div>
+              <div><input id="confirma" type="password" placeholder="confirmar senha" th:field="*{senhaConfirma}"></div>
+              <div><input type="submit" id="confirmar" value="CONFIRMAR"></div>
+            </form>
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

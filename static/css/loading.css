@@ -1,0 +1,49 @@
+@font-face{
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+  }
+
+  body {
+    background-color: black;
+  }
+
+  .fundo{
+    display: flex;
+    justify-content: center;
+    width: 1350px;
+    height: 600px;
+    background-color: aliceblue;
+  }
+
+  .img{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    text-align:center;
+    width: 1350px;
+    height: 600px;
+  }
+
+  #Loading{
+    display: flex;
+    justify-content: center;
+  }
+
+   #Loading{
+    position:absolute;
+    z-index:1;
+    top:55%;
+    left:42%;
+    right: 35%;
+    width:300px;               /* largura para o botão */
+    height:60px;              /* altura para o botão */
+    padding:0;
+    margin:-15px 0 0 -30px;   /* margem à esquerda e ao topo metade da medida do botão */
+    border-radius: 50px;
+    font-family: Bungee;
+    color: white;
+    text-shadow: 9px 7px 5px #5E17EB;
+    text-align: center;
+    font-size: 70px;
+    box-shadow:  9px 7px 5px #5E17EB(0, 0, 0, 0.77);
+  }

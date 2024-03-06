@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <nav th:fragment="navbar">
+        <div class="vidas-div">
+            <img src="../static/assets/images/coracao.png" th:src="@{/assets/images/coracao.png}" alt="coracao.png">
+            <span>5</span>
+        </div>
+        <div class="moedas-div">
+            <img src="../static/assets/images/moedas.png" th:src="@{/assets/images/moedas.png}" alt="moedas.png">
+            <span>120</span>
+        </div>
+    </nav>
+
+    <div th:fragment="navbar-stylesheet" th:remove="tag">
+        <link rel="stylesheet" type="text/css" href="../static/css/navbar.css"  th:href="@{/css/navbar.css}" />
+        <script type="text/javascript" src="../../static/js/user.js" th:src="@{/js/user.js}"></script>
+        <script type="module" src="../../static/js/navbar.js" th:src="@{/js/navbar.js}"></script>
+    </div>
+
+    <div th:fragment="multiplayer-session-lobby" th:remove="tag">
+        <script type="text/javascript" src="../../static/js/socket_js.js" th:src="@{/js/socket_js.js}"></script>
+        <script type="module" src="../../static/js/lobby.js" th:src="@{/js/lobby.js}"></script>
+    </div>
+</body>
+</html>

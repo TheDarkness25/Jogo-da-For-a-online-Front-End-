@@ -1,0 +1,154 @@
+@font-face{
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .fundo{
+    display: flex;
+    justify-content: center;
+    width: 1350px;
+    height: 600px;
+    background-color: aliceblue;
+  }
+  
+  .img{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    text-align:center;
+    width: 1350px;
+    height: 600px;
+  }
+
+  #time{
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    left: 37%;
+    right: 35%;
+    width: 350px;
+    height: 60px;
+    padding: 0;
+    font-family: Bungee;
+    color: #ed1718;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  #resp{
+    position: absolute;
+    z-index: 1;
+    top: 24%;
+    left: 37%;
+    right: 35%;
+    width: 350px;
+    height: 60px;
+    padding: 0;
+    font-family: Bungee;
+    color: #5E17EB;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #vida {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #moeda{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 93%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #imgMoeda, #imgCor, #lblVida, #lblMoeda{
+    margin-left: 5px;
+  }
+
+  #x {
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+    left: 14%;
+    right: 35%;
+    width: 300px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#x:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 65%;
+    left: 45%;
+    right: 35%;
+    width: 175px;
+    height: 50px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    color: #FFC23A;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #entrar:hover {
+    background-color: white;
+    color: #371A47;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  
+
+  

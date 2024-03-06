@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'bungee';
+  src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  position: relative;
+  left: 3vw;
+  display: block;
+  width: 95vw;
+  height: inherit;
+  background-image: url('../assets/images/fundo_copy.png');
+  background-size: contain;
+}
+
+.content {
+  position: relative;
+  top: 12vh;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  border-radius: 4vh;
+  width: 75vw;
+  height: 65vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center-column {
+  display: block;
+  height: inherit;
+}
+
+.tema {
+  position: relative;
+  top: 2vh;
+  right: 1vw;
+  font-family: Bungee;
+  color: #FFC23A;
+  font-size: 7vh;
+  text-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(5vh, auto);
+  width: 45vw;
+  position: relative;
+  top: 20vh;
+}
+
+.tecla p {
+  font-size: 2vh;
+  font-family: Bungee;
+  border: 1.5px solid black;
+  border-radius: 0.4vh;
+  width: 3.5vw;
+  height: 3.5vh;
+  line-height: 3.5vh;
+}
+
+.tecla p:hover {
+  font-size: 2vh;
+  font-family: Bungee;
+  border: 1.5px solid black;
+  border-radius: 0.4vh;
+  width: 3.5vw;
+  height: 3.5vh;
+  line-height: 3.5vh;
+  background-color: gray;
+}
+
+.responder {
+  position: relative;
+  grid-column-start: 8;
+  grid-column-end: 10;
+  background-color: #5E17EB;
+  text-align: center;
+  border-radius: 0.4vh;
+  height: 4vh;
+}
+
+.responder:hover {
+  color: #371A47;
+  border: #FFC23A solid 0.5vh;
+  transform: scaleX(1.1);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.responder p{
+  position: relative;
+  font-family: Bungee;
+  color: #ffffff;
+  font-size: small;
+  line-height: 4vh;
+}
+
+
+.palavra {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(5vh, auto);
+  position: relative;
+  column-gap: 2vw;
+  top: 10vh;
+}
+
+.letra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  border-bottom: black solid 0.7vh;
+}
+
+
+.letra p{
+  font-size: 5vh;
+  font-family: Bungee;
+}
+
+.aviso-turno {
+  position: relative;
+  top: 24vh;
+  font-size: 5vh;
+  font-family: Bungee;
+  color: #5E17EB;
+}
+
+.left-column {
+  height: inherit;
+  width: 15vw;
+}
+
+.right-column {
+  height: inherit;
+  width: 15vw;
+}
+
+.upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: inherit;
+  height: 20vh;
+}
+
+.bottom{
+  width: inherit;
+  height: 45vh;
+}
+
+.astronauta {
+  height: 15vh;
+  width: 15vh;
+}
+
+.timer {
+  font-size: 5vh;
+  font-family: Bungee;
+  color: #5E17EB;
+}
+
+.cilindro {
+  height: 35vh;
+}
+
+.ponteiro {
+  position: relative;
+  bottom: 19vh; /*de cima para baixo: 19vh 16vh 13vh 10vh 7vh 4vh 1vh*/
+}

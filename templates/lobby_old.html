@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/lobby.css}" />
+    <link rel="icon" type="image/png" th:href="@{/assets/images/icone_astronaut.png}" />
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="img">
+            <img th:src="@{/assets/images/lobby.png}" width="100%" height="100%">
+            <div>
+                <label id="Loading">Aguardando</label>
+                <label id="jog">jogador (1/2)...</label>
+            </div>
+        </div>
+        <div>
+            <div id="vida">
+                <img id="imgCor" th:src="@{/assets/images/coracao.png}" width="30px" height="30px">
+                <label id="lblVida">10</label>
+            </div>
+            <div id="moeda">
+                <img id="imgMoeda" th:src="@{/assets/images/moedas.png}" width="30px" height="30px">
+                <label id="lblMoeda">120</label>
+            </div>
+        </div>
+        <div >
+            <button id="pronto">pronto</button>
+        </div>
+        <div>
+            <button id="cancelar">cancelar</button>
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+	  // Your web app's Firebase configuration
+	  const firebaseConfig = {
+		apiKey: "AIzaSyCkZ8iFIWqLYEUhnhNHI-bgm43RK9cnlzM",
+		authDomain: "forca001-ef1b2.firebaseapp.com",
+		databaseURL: "https://forca001-ef1b2-default-rtdb.firebaseio.com",
+		projectId: "forca001-ef1b2",
+		storageBucket: "forca001-ef1b2.appspot.com",
+		messagingSenderId: "981219421362",
+		appId: "1:981219421362:web:a1c21d17107598061c2dab"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	</script>
+    
+    <script type="module" src="../static/js/lobby.js" th:src="@{/js/lobby.js}"></script>
+    
+</body>
+
+</html>

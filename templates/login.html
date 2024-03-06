@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="../static/assets/images/icone_astronaut.png" th:href="@{/assets/images/icone_astronaut.png}"/>
+<link rel="stylesheet" type="text/css" href="../static/css/login.css" th:href="@{/css/login.css}"/>
+<title>Jogo da Forca</title>
+</head>
+
+<body>
+
+<div th:if="${param.error}">
+    <span style="color: yellow;">Invalid username and password.</span> 
+</div>
+<div th:if="${param.logout}">
+    You have been logged out.
+</div>
+
+<div class="container">
+
+  <div class="box image">
+    <img src="../static/assets/images/seta_voltar.png" th:src="@{/assets/images/seta_voltar.png}" class="voltar" onclick="history.back();">
+      <form th:action="@{/login}" method="post">
+        <input type="text" class="text-input" style="top: 30%;" placeholder="Usuário" name="username">
+        <input type="password" class="text-input" style="top: 40%;" placeholder="Senha" name="password"/>
+        <a th:href="@{/recuperacao}" class="link esqueci">ESQUECI A SENHA</a> 
+        <input type="submit" class="entrar" value="ENTRAR"/>
+        <a th:href="@{/cadastro}" class="link criar">CRIAR CONTA</a>
+      </form>
+  </div>
+</div>
+
+</body>
+
+</html>

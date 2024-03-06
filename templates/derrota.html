@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  th:href="@{/css/derrota.css}" />
+    <link rel="icon" type="image/png" th:href="@{/assets/images/icone_astronaut.png}"/>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div id="audio">
+        <audio th:src="@{/assets/sounds/efeito_sonoro_game_over.mp3}" autoplay></audio>
+    </div>
+    <div class="fundo">
+        <div class="img">
+            <img th:src="@{/assets/images/derrota.png}" width="100%" height="100%">
+            <div>
+                <button id="btnContinuar">CONTINUAR</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

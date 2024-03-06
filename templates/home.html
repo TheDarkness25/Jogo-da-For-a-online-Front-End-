@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css"  th:href="@{/css/home.css}" />
+    <link rel="icon" type="image/png" href="../static/assets/images/icone_astronaut.png" th:href="@{/assets/images/icone_astronaut.png}"/>
+    <div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+    <nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+
+    <div class="saudacoes">
+        <span>Bem vindo(a), </span>
+        <span sec:authentication="name">jogador (a)</span>
+        <span>!</span>
+    </div>
+    <br>
+    <a th:href="@{/game/lobby}" class="jogarBtn">
+        <p class="jogar" name="jogar" id="jogar">JOGAR</p>
+    </a>
+    <br>
+    <a th:href="@{/loja}" class="menu">
+        <img name="loja" id="loja" class="loja" src="../static/assets/images/carrinho_amarelo.png" th:src="@{/assets/images/carrinho_amarelo.png}" alt="carrinho_amarelo.png">
+    </a>
+    
+    <a th:href="@{/perfil}" class="menu">
+        <img name="perfil" id="perfil" class="perfil" src="../static/assets/images/perfil_amarelo.png" th:src="@{/assets/images/perfil_amarelo.png}" alt="perfil_amarelo.png">
+    </a>
+
+    <div class="logoutBox">
+        <img class="logout" src="../static/assets/images/logout.png" th:src="@{/assets/images/logout.png}" alt="logout.png" onclick="HideOverlay(false)" th:onclick="HideOverlay(false)">
+    </div>
+
+    <div class="outer-box" id="overlay">
+        <img class="btn-x" src="../static/assets/images/botao_x.png" th:src="@{/assets/images/botao_x.png}" onclick="HideOverlay(true)" th:onclick="HideOverlay(true)">
+        <div class="inner-box">
+            <span class="confirma">Tem certeza que deseja sair?</span>
+            <a class="btn-sair" th:href="@{/logout}">SAIR</a>
+        </div>
+    </div>
+</body>
+<script>
+    function HideOverlay(hide) {
+        console.log(hide)
+        const overlay = document.getElementById('overlay');
+        var display = "inherit";
+        if (hide) {
+            display = "none";
+        }
+        overlay.style.display = display
+        overlay.style.setProperty('display', display);
+    }
+</script>
+</html>

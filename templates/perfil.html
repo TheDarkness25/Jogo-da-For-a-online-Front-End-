@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/perfil.css"  th:href="@{/css/perfil.css}" />
+    <link rel="icon" type="image/png" href="../static/assets/images/icone_astronaut.png" th:href="@{/assets/images/icone_astronaut.png}"/>
+    <div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+    <nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+
+    <div class="box">
+        <a th:href="@{/home}"><img src="../static/assets/images/seta_voltar.png" th:src="@{/assets/images/seta_voltar.png}" class="voltar"></a>
+        <span>MEU PERFIL</span>
+        <div class="grid-container">
+            <div class="grid-item">
+                <label for="username">NOME DE USUÁRIO</label>
+                <p th:text="${user.username}" type="text" name="username" id="username">JOGADOR(A)</p>
+            </div>
+            <div class="grid-item">
+                <label for="email">E-MAIL</label>
+                <p th:text="${user.email}" type="email" name="email" id="email">JOGADOR@EMAIL.COM</p>
+            </div>
+            <div class="grid-item">
+                <label for="password">SENHA</label>
+                <p type="password" name="password" id="password">*********</p>
+            </div>
+        </div>
+        <a th:href="@{/redefinir}" class="redefinirBtn">
+            <p class="redefinir" name="redefinir" id="redefinir">REDEFINIR SENHA</p>
+        </a>
+    </div>
+    
+</body>
+</html>

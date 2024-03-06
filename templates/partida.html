@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" type="text/css" href="../static/css/partida.css" th:href="@{/css/partida.css}">
+<div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+<link rel="stylesheet" type="text/css" href="../static/css/navbar.css"  th:href="@{/css/navbar.css}" />
+<div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <div th:replace="fragments/multiplayer_fragment :: multiplayer-match"></div>
+</head>
+
+
+<body>
+<nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+<div class="content">
+   <div class="container">
+      <div class="left-column">
+         <div class="upper">
+            <img th:src="@{/assets/images/partida_astronauta.png}" src="../static/assets/images/partida_astronauta.png" class="astronauta">
+         </div>
+         <div class="bottom">
+            <img th:src="@{/assets/images/partida_cilindro.png}" src="../static/assets/images/partida_cilindro.png" class="cilindro">
+            <img th:src="@{/assets/images/partida_ponteiro.png}" src="../static/assets/images/partida_ponteiro.png" class="ponteiro">
+         </div>
+      </div>
+      <div class="center-column">
+         <p class="tema">TEMA</p>
+   
+         <div class="palavra"></div>
+   
+         <div class="teclado"></div>
+   
+         <p class="aviso-turno"></p>
+      </div>
+      <div class="right-column">
+         <div class="upper">
+            <p class="timer">--:--</p>
+         </div>
+         <div class="bottom">
+            <img th:src="@{/assets/images/partida_cilindro.png}" src="../static/assets/images/partida_cilindro.png" class="cilindro">
+            <img th:src="@{/assets/images/partida_ponteiro.png}" src="../static/assets/images/partida_ponteiro.png" class="ponteiro">
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+<script th:type="module" th:inline="javascript">
+   import {MatchMultiplayerController} from '../../js/partida_socket.js';
+   import {User} from '../../js/user.js';
+   /*<![CDATA[*/ 
+   var gameId = [[${gameId}]];
+   $(window).on('load', function() {
+      MatchMultiplayerController.connectToMatch(gameId, new User())
+   });
+   /*]]>*/
+</script>
+</html>

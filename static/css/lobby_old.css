@@ -1,0 +1,176 @@
+@font-face{
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .fundo{
+    display: flex;
+    justify-content: center;
+    width: 1350px;
+    height: 600px;
+    background-color: aliceblue;
+  }
+  
+  .img{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    text-align:center;
+    width: 1350px;
+    height: 600px;
+  }
+
+  #Loading{
+    display: flex;
+    justify-content: center;
+  }
+  
+   #Loading{
+    position:absolute;
+    z-index:1;
+    top:55%;
+    left:42%;
+    right: 35%;
+    width:300px;               /* largura para o botão */
+    height:60px;              
+    padding:0;
+    margin:-15px 0 0 -30px;
+    border-radius: 50px;
+    font-family: Bungee;
+    color: white;
+    text-shadow: 9px 7px 5px #5E17EB;
+    text-align: center;
+    font-size: 50px;
+    box-shadow:  9px 7px 5px #5E17EB(0, 0, 0, 0.77);
+  }
+
+  #jog{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    z-index:1;
+    top:65%;
+    left:31%;
+    right: 35%;
+    width:600px;               /* largura para o botão */
+    height:60px;              
+    padding:0;
+    margin:-15px 0 0 -30px;
+    border-radius: 50px;
+    font-family: Bungee;
+    color: white;
+    text-shadow: 9px 7px 5px #5E17EB;
+    text-align: center;
+    font-size: 50px;
+    box-shadow:  9px 7px 5px #5E17EB(0, 0, 0, 0.77);
+  }
+
+  #vida {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #moeda{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 93%;
+    right: 35%;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #5E17EB;
+    font-family: Bungee;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+  
+  #imgMoeda, #imgCor, #lblVida, #lblMoeda{
+    margin-left: 5px;
+  }
+
+  #pronto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 88%;
+    right: 35%;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #3dad4a;
+    font-family: Bungee;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+
+  #pronto:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  #cancelar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 5%;
+    right: 35%;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    margin: -15px 0 0 -30px;
+    border-radius: 50px;
+    background-color: #fd0001;
+    font-family: Bungee;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+
+  #cancelar:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/loja.css"  th:href="@{/css/loja.css}" />
+    <link rel="icon" type="image/png" href="../static/assets/images/icone_astronaut.png" th:href="@{/assets/images/icone_astronaut.png}"/>
+    <div th:replace="fragments/life_coins_fragment :: navbar-stylesheet"></div>
+    <title>Jogo da Forca</title>
+</head>
+<body>
+
+    <nav th:replace="fragments/life_coins_fragment :: navbar"></nav>
+
+    <div class="box">
+        <img src="../static/assets/images/seta_voltar.png" th:src="@{/assets/images/seta_voltar.png}" class="voltar" onclick="history.back();">
+        <span>LOJA</span>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="inner-grid-container">
+                    <div class="inner-grid-item image">
+                        <img th:src="@{/assets/images/moedas.png}" src="../static/assets/images/moedas.png" alt="moedas.png">
+                    </div>
+                    <div class="inner-grid-item product">
+                        <span>30 MOEDAS</span>
+                    </div>
+                    <div class="inner-grid-item price">
+                        <span>COMPRAR POR R$8,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner-grid-container">
+                    <div class="inner-grid-item image">
+                        <img th:src="@{/assets/images/coracao.png}" src="../static/assets/images/coracao.png" alt="coracao.png">
+                    </div>
+                    <div class="inner-grid-item product">
+                        <span>5 VIDAS</span>
+                    </div>
+                    <div class="inner-grid-item price">
+                        <span>COMPRAR POR R$6,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner-grid-container">
+                    <div class="inner-grid-item image">
+                        <img th:src="@{/assets/images/moedas.png}" src="../static/assets/images/moedas.png" alt="moedas.png">
+                    </div>
+                    <div class="inner-grid-item product">
+                        <span>90 MOEDAS</span>
+                    </div>
+                    <div class="inner-grid-item price">
+                        <span>COMPRAR POR R$22,90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="inner-grid-container">
+                    <div class="inner-grid-item image">
+                        <img th:src="@{/assets/images/coracao.png}" src="../static/assets/images/coracao.png" alt="coracao.png">
+                    </div>
+                    <div class="inner-grid-item product">
+                        <span>VIDAS ILIMITADAS</span>
+                    </div>
+                    <div class="inner-grid-item price">
+                        <span>COMPRAR POR R$49,90</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

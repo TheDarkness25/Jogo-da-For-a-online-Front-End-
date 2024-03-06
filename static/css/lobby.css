@@ -1,0 +1,104 @@
+@font-face{
+    font-family: Bungee;
+    src: url('../assets/fonts/bungee/Bungee-Regular.ttf');
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  body {
+    position: relative;
+    left: 3vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95vw;
+    height: 95vh;
+    background-image: url('../assets/images/fundo_copy.png');
+    background-size: contain;
+  }
+  
+  .lobby {
+    position: relative;
+    top: 7vh;
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .carregando {
+    color: #fefeff;;
+    font-size: 5vh;
+    font-family: Bungee;
+  }
+
+  footer {
+    position: relative;
+    top: 26vh;
+    left: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vh;
+    font-family: Bungee;
+    width: 90vw;
+  }
+
+  footer a {
+    padding: 2vh;
+    border-radius: 2vw;
+    color: #fefeff;
+    text-decoration: none;
+  }
+
+  footer p {
+    padding: 2vh;
+    border-radius: 2vw;
+    color: #fefeff;
+    text-decoration: none;
+  }
+
+  .cancelar {
+    background-color: red;
+  }
+
+  .cancelar:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .pronto {
+    background-color: green;
+  }
+  
+  .pronto:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .box {
+    position: absolute;
+    left: 42vw;
+    visibility: collapse;
+  }
+
+  .section {
+    margin-top: 1.5vh;
+  }
+
+  .label {
+    font-family: Bungee;
+    color: #FFC23A;
+    font-size: 3vh;
+    text-shadow: 9px 7px 5px rgba(0, 0, 0, 0.77);
+  }
+
+  .value {
+    font-family: Bungee;
+    color: black;
+    font-size: 3vh;
+    background-color: #fefeff;
+    border-radius: 1vh;
+  }
